@@ -1,6 +1,7 @@
 # note_taking_app
 
-A new Flutter project.
+Getx
+Note app using SQLflite(insert , update , select , update).
 
 ## Getting Started
 
