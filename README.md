@@ -1,4 +1,4 @@
-# note_taking_app
+# note_app
 
 Getx
 Note app using SQLflite(insert , update , select , update).
