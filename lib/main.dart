@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:note_taking_app/utils/theme.dart';
 import 'package:note_taking_app/views/screens/add_note_screen.dart';
 import 'package:note_taking_app/views/screens/home_screen.dart';
 
 
-void main(){
-  runApp(MyApp());
+Future<void> main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  // await dep.init();
+  runApp(MyApp(),);
 }
 
 
@@ -13,13 +17,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return   MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: "/",
-      routes: {
-        "/" : (context) =>  const HomeScreen(),
-        "/AddNote" : (context) => const AddNoteScreen()
-      },
+      theme: themeAppLight(),
+      darkTheme: themeAppDark(),
+      home: const HomeScreen(),
+      // initialRoute: "/",
+      // routes: {
+      //   "/" : (context) =>  const HomeScreen(),
+      //   "/AddNote" : (context) => const AddNoteScreen()
+      // },
     );
   }
 }

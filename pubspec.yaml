@@ -36,7 +36,9 @@ dependencies:
   cupertino_icons: ^1.0.2
   sqflite:
   path:
-
+  get:
+  clay_containers:
+  font_awesome_flutter:
 
 dev_dependencies:
   flutter_test:
